@@ -21,28 +21,46 @@ body {
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
-  background-color: #543936; }
+  background-color: #543936;
+  grid-column: full-start / col-end 6;
+  grid-row: 1 / 2; }
 
 .agents {
-  background-color: #1c2840; }
+  background-color: #1c2840;
+  grid-column: col-start 7 / full-end;
+  grid-row: 1 / 2; }
 
 .features {
-  background-color: #aaa; }
+  background-color: #aaa;
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3; }
 
 .footer {
-  background-color: #1c2840; }
+  background-color: #1c2840;
+  grid-column: full-start / full-end;
+  grid-row: 6 / 7; }
 
 .gallery {
-  background-color: #543936; }
+  background-color: #543936;
+  grid-column: full-start / full-end;
+  grid-row: 5 / 6; }
 
 .homes {
-  background-color: #1c2840; }
+  background-color: #1c2840;
+  grid-column: center-start / center-end;
+  grid-row: 4 / 5; }
 
 .sidebar {
-  background-color: #d45948; }
+  background-color: #d45948;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
 
 .story__pictures {
-  background-color: #d45948; }
+  background-color: #d45948;
+  grid-column: full-start / col-end 4;
+  grid-row: 3 / 4; }
 
 .story__content {
-  background-color: #f9f7f6; }
+  background-color: #f9f7f6;
+  grid-column: col-start 5 / full-end;
+  grid-row: 3 / 4; }
