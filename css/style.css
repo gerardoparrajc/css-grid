@@ -14,3 +14,30 @@ body {
   color: #464040;
   font-weight: 300;
   line-height: 1.6; }
+
+.header {
+  background-color: #543936; }
+
+.agents {
+  background-color: #1c2840; }
+
+.features {
+  background-color: #aaa; }
+
+.footer {
+  background-color: #1c2840; }
+
+.gallery {
+  background-color: #543936; }
+
+.homes {
+  background-color: #1c2840; }
+
+.sidebar {
+  background-color: #d45948; }
+
+.story__pictures {
+  background-color: #d45948; }
+
+.story__content {
+  background-color: #f9f7f6; }
