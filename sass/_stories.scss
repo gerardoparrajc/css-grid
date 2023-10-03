@@ -11,5 +11,22 @@
 
         grid-column: col-start 5 / full-end;
         grid-row: 3 / 4;
+
+        padding: 6rem 8vw;
+
+        display: grid;
+        align-content: center;
+        justify-items: start;
+
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; */
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 4rem;
     }
 }
