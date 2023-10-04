@@ -119,6 +119,13 @@ body {
   grid-column: center-start / center-end;
   grid-row: 4 / 5; }
 
+.home__img {
+  width: 100%; }
+
+.home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+  width: 2rem;
+  height: 2rem; }
+
 .sidebar {
   background-color: #d45948;
   grid-column: sidebar-start / sidebar-end;
