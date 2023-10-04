@@ -126,15 +126,33 @@ body {
   padding-bottom: 15rem; }
 
 .home {
-  background-color: #f9f7f6; }
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem; }
   .home__img {
-    width: 100%; }
+    width: 100%;
+    height: 22rem;
+    object-fit: cover; }
   .home__like {
     width: 2rem;
-    height: 2rem; }
-  .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
-    width: 2rem;
-    height: 2rem; }
+    height: 2rem;
+    fill: #d45948; }
+  .home__name {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    background-color: #1c2840;
+    font-weight: 400;
+    padding: 1.25rem;
+    width: 80%; }
+  .home__location, .home__rooms, .home__area, .home__price {
+    font-size: 1.5rem; }
+    .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+      fill: #d45948;
+      width: 2rem;
+      height: 2rem; }
 
 .sidebar {
   background-color: #d45948;
