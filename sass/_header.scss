@@ -1,3 +1,4 @@
+// SOLUCIÓN CON CSS GRID
 .header {
     background-color: $color-grey-dark-1;
 
@@ -7,23 +8,113 @@
     background-image: linear-gradient(rgba($color-secondary, 0.93), rgba($color-secondary, 0.93)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
+    padding:  8rem;
+    padding-top: 4rem;
+
+    display: grid;
+    grid-template-rows: 1fr min-content 5rem 1fr;
+    grid-template-columns: max-content;
+    justify-content: center;
+    gap: 1.5rem;
+    
 
     &__logo {
         height: 3rem;
+        justify-self: center;
+    }
+
+    &__btn {
+        justify-self: start;
+        align-self: start;
+    }
+
+    &__seenon-text {
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        align-items: center;
+        column-gap: 1.5rem;
+
+        &::after,
+        &::before {
+            content: '';
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+        }
+    }
+
+    &__seenon-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+
+        img {
+            height: 2.5rem;
+            filter: brightness(70%);
+        }
+    }
+}
+
+
+
+// SOLUCIÓN CON FLEX
+
+/* .header {
+    background-color: $color-grey-dark-1;
+
+    grid-column: full-start / col-end 6;
+    grid-row: 1 / 2;
+
+    background-image: linear-gradient(rgba($color-secondary, 0.93), rgba($color-secondary, 0.93)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: space-between;
+
+    padding: 4rem 17rem 8rem 17rem;
+
+
+    &__logo {
+        height: 3rem;
+        align-self: center;
     }
 
     &__btn {
 
     }
 
+    .heading-3 {
+        margin-bottom: 1.2rem;
+    }
+
+    .heading-1 {
+        margin-bottom: 2.5rem;
+    }
+
+    &__seenon {
+        width: 100%;
+    }
+
     &__seenon-text {
         font-size: 1.6rem;
         color: $color-grey-light-2;
+        text-align: center;
     }
 
     &__seenon-logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
         img {
             height: 2.5rem;
         }
     }
-}
+} */
