@@ -111,6 +111,8 @@ body {
   padding: 8rem; }
 
 .nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   list-style-type: none; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;

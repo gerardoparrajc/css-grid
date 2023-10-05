@@ -4,10 +4,13 @@
     grid-column: full-start / full-end;
     grid-row: 6 / 7;
 
-    padding: 8rem;
+    padding: 8rem;    
 }
 
 .nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
     list-style-type: none;
 
     &__link:link,
