@@ -34,9 +34,14 @@ body {
   .btn:hover {
     background-color: #54231D; }
 
-.heading-2, .heading-3, .heading-4 {
+.heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1; }
 
 .heading-2 {
   font-size: 4rem;
@@ -70,7 +75,17 @@ body {
 .header {
   background-color: #543936;
   grid-column: full-start / col-end 6;
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  background-image: linear-gradient(rgba(28, 40, 64, 0.93), rgba(28, 40, 64, 0.93)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center; }
+  .header__logo {
+    height: 3rem; }
+  .header__seenon-text {
+    font-size: 1.6rem;
+    color: #aaa; }
+  .header__seenon-logos img {
+    height: 2.5rem; }
 
 .agents {
   background-color: #1c2840;

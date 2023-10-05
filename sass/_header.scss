@@ -3,4 +3,27 @@
 
     grid-column: full-start / col-end 6;
     grid-row: 1 / 2;
+
+    background-image: linear-gradient(rgba($color-secondary, 0.93), rgba($color-secondary, 0.93)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__logo {
+        height: 3rem;
+    }
+
+    &__btn {
+
+    }
+
+    &__seenon-text {
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+    }
+
+    &__seenon-logos {
+        img {
+            height: 2.5rem;
+        }
+    }
 }
