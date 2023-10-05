@@ -107,7 +107,30 @@ body {
 .footer {
   background-color: #1c2840;
   grid-column: full-start / full-end;
-  grid-row: 6 / 7; }
+  grid-row: 6 / 7;
+  padding: 8rem; }
+
+.nav {
+  list-style-type: none; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px); }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-top: 6rem;
+  text-align: center; }
 
 .gallery {
   background-color: #f9f7f6;
