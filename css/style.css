@@ -110,9 +110,22 @@ body {
   grid-row: 6 / 7; }
 
 .gallery {
-  background-color: #543936;
+  background-color: #f9f7f6;
   grid-column: full-start / full-end;
-  grid-row: 5 / 6; }
+  grid-row: 5 / 6;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 6vw);
+  gap: 1.5rem;
+  padding: 1.5rem; }
+  .gallery__item--1 {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2; }
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
 
 .homes {
   grid-column: center-start / center-end;
